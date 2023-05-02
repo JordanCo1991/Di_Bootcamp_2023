@@ -50,10 +50,7 @@ p {
   margin-right: 300px;
 }
 
-/* Media queries */
-
 @media only screen and (max-width: 599px) {
-  /* Small devices */
   h1 {
     font-size: 35px;
   }
@@ -76,7 +73,6 @@ p {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 767px) {
-  /* Medium devices */
   h1 {
     font-size: 25px;
   }
@@ -87,7 +83,6 @@ p {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* Large devices */
   h1 {
     font-size: 5em;
     display: inline-block;
@@ -111,7 +106,6 @@ p {
 }
 
 @media only screen and (min-width: 992px) {
-  /* Extra large devices */
   h1 {
     font-size: 5em;
     display: inline-block;
