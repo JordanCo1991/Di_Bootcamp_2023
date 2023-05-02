@@ -1,0 +1,32 @@
+.container {
+  border: 1px solid black;
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+.yellowbox {
+  border: 1px solid black;
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+  display: flex;
+}
+
+#left {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#right {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+#center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 50vw;
+}

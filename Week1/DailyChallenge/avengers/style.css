@@ -2,8 +2,11 @@
   margin: 0;
   padding: 0;
 }
-
-@import url("https://fonts.google.com/specimen/Kanit");
+@font-face {
+  font-family: Avengers;
+  src: url(AvengeroRegular-zvgl.ttf);
+}
+/* @import url("https://fonts.google.com/specimen/Kanit"); */
 
 #navBar {
   background-color: black;
@@ -32,7 +35,10 @@ body {
   background-image: url(thor.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: "Kanit", sans-serif;
+  font-family: "Avengero";
+  /* font-family: "Kanit", sans-serif; */
+  height: 100%;
+  width: 100%;
 }
 
 .main_content {
