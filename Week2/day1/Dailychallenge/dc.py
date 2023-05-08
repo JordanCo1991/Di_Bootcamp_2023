@@ -1,3 +1,6 @@
+
+
+
 text = input("Enter a string (10 characters): ")
 user_imput =len(text)
 
@@ -10,7 +13,7 @@ print ("Your String is too short")
 
 string = input("Enter a string: ")
 
-for i in range(1, len(string) + 1):
-    substring = string[:i]
+for bla in range(1, len(string) + 1):
+    substring = string[:bla]
     print(substring)
 
