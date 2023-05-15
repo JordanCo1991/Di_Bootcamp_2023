@@ -1,4 +1,7 @@
-# # class Cat:
+# # # exercise 1
+# 
+# 
+# class Cat:
 # #     def __init__(self, cat_name, cat_age):
 # #         self.name = cat_name
 # #         self.age = cat_age
@@ -25,7 +28,7 @@
 # # oldest_cat(cats)
 
 
-
+# exercise 2
 
 # class Dog:
 #     def __init__(self,dog_name,height_dog) :
@@ -56,6 +59,8 @@
 
 # else:
 #      print(f"{sarahs_dog.name} smaller than {davids_dog.name}" )
+
+# exercise 3
 
 
 class Song:
