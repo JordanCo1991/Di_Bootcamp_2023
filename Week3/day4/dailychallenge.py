@@ -2,12 +2,12 @@ class Text:
     def __init__(self, text):
         self.text = text
 
-    def word_frequency(self, word):
-        words = self.text.split()
+    def occurence_word(self, word):
+        words = self.text.split(" ")
         count = words.count(word)
-        if count == 0:
-            return None  # Word not found in the text
-        return count
+        if count == 0 : 
+            return None 
+        return f"The word {word} was found {count} times"
 
     def most_common_word(self):
         words = self.text.split()
@@ -22,9 +22,16 @@ class Text:
         unique_words = list(set(words))
         return unique_words
 
+  @classmethod
+        def from_file(cls, file): 
+            with open(file, "r") as story :
+                all_story = story.read()
+                return cls(all_story)
 
 text_string = "A good book would sometimes cost as much as a good house."
 text = Text(text_string)
-print(text.word_frequency("good")) 
+print(text.occurence_word("good")) 
 print(text.most_common_word())  
 print(text.unique_words()) 
+
+t2 = text.from_file('/Users/jordancohen/Code/Di_Bootcamp_2023/Week3/day4/the_stranger.txt')
