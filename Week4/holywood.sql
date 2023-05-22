@@ -71,7 +71,7 @@
 -- Delete one actor and return it
 
 
-SELECT * FROM actor
+-- SELECT * FROM actor
 
 -- UPDATE actor
 -- SET first_name = 'Maty'
@@ -85,5 +85,8 @@ SELECT * FROM actor
 
 -- ALTER TABLE actor RENAME COLUMN date_birth TO age;
 
+-- SELECT COUNT(actor_id)
+-- FROM actor;
 
-
+-- INSERT INTO actor (first_name, last_name, age, number_oscars)
+-- VALUES ('', '', , )
