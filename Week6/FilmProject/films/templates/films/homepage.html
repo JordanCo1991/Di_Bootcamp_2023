@@ -1,0 +1,26 @@
+{%extends 'partials/base.html'%}
+
+{%block content%}
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+{%for film in films%}
+<div class="col">
+<div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{film.title}}</h5>
+
+      {%for film_director in film.director.all%}
+        <h6 class="card-title">{{film_director}}</h6>
+      {% endfor %}
+
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  
+      <form action="{%url 'add_review'%}"> <button class = "btn btn-primary" name="film_id" value="{{film.id}}"> Leave Review</button></form>
+    </div>
+  </div>
+ </div>
+</div>
+{%endfor%}
+
+{% endblock content%}
