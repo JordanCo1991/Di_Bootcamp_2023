@@ -21,7 +21,7 @@ def students_list(request):
         return Response(serializer.data)
     
     elif request.method == 'POST':
-        serializer = StudentSerializer(data=request.data)
+        serializer = StudentsSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -30,7 +30,7 @@ def students_list(request):
 @api_view(['GET', 'PUT', 'DELETE'])
 def students_detail(request, pk):
     try:
-        student = Students.objects.get(pk=pk)
+        students = Students.objects.get(pk=pk)
     except Students.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
 

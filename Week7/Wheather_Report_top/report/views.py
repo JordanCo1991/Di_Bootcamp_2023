@@ -8,6 +8,9 @@ from rest_framework.response import Response
 from .serializers import ReportSerializer
 from .models import Report
 
+from rest_framework import generics
+from rest_framework import  mixins
+
 # Create your views here.
 
 
@@ -45,3 +48,21 @@ class ReportView(APIView):
             serializer.save()
             return Response(serializer.data)
         return Response(serializer.errors)
+
+
+
+class ReportListView(mixins.ListModelMixin,
+mixins.CreateModelMixin,
+ generics.GenericAPIView):
+
+    queryset = Report.objects.all()
+    serializer_class = ReportSerializer
+
+class ReportDetailView(generics.RetrieveAPIView):
+    queryset = Report.objects.all()
+    serializer_class = ReportSerializer
+
+class ReportDeleteView(generics.RetrieveDestroyAPIView):
+    queryset = Report.objects.all()
+    serializer_class = ReportSerializer
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsForecaster)
