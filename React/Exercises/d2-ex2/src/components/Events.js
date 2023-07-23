@@ -7,7 +7,7 @@ const Events = () => {
 
   return (
     <div>
-      <button onClick={clickMe}>Click Me</button>
+      <button onClick={clickMe}>Click Me!</button>
     </div>
   );
 };

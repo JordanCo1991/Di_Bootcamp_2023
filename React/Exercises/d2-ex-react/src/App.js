@@ -1,5 +1,6 @@
 import './App.css';
 // import Cars from './components/Cars';
+import Events from './components/Events';
 
 
 
