@@ -16,3 +16,11 @@
 // x = a + b;
 
 // console.log(x+c);
+
+
+// DailyChallenge
+
+
+const largeNumber = 356
+
+module.exports = {largeNumber}
