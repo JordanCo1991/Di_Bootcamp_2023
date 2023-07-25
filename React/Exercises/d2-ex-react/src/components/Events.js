@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import React from 'react';
 
 const Events = () => {
@@ -13,3 +14,11 @@ const Events = () => {
 };
 
 export default Events;
+=======
+
+
+
+function clickMe () => {
+    const
+}
+>>>>>>> Stashed changes
